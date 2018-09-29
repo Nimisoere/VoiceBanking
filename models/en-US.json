@@ -1,96 +1,96 @@
 {
-    "interactionModel": {
-      "languageModel": {
-        "invocationName": "banking",
-        "intents": [
-          {
-            "name": "AMAZON.FallbackIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.NavigateHomeIntent",
-            "samples": []
-          },
-          {
-            "name": "TransferIntent",
-            "slots": [
-              {
-                "name": "amount",
-                "type": ""
-              },
-              {
-                "name": "recipient",
-                "type": ""
-              }
-            ],
-            "samples": [
-              "Transfer money to {recipient}",
-              "Transfer {amount}",
-              "Send {amount}",
-              "{amount}",
-              "Send {amount} to {recipient}",
-              "Send money to {recipient}",
-              "Transfer {amount} to {recipient}"
-            ]
-          },
-          {
-            "name": "TopupIntent",
-            "slots": [
-              {
-                "name": "amount",
-                "type": ""
-              },
-              {
-                "name": "number",
-                "type": ""
-              }
-            ],
-            "samples": [
-              "Buy {amount} recharge card for {number}",
-              "Buy {amount} recharge card",
-              "Top up {number} with {amount}",
-              "Top up my phone with {amount}",
-              "Buy {amount} airtime",
-              "Buy airtime",
-              "Top up my phone",
-              "Recharge my phone"
-            ]
-          },
-          {
-            "name": "PaymentIntent",
-            "slots": [
-              {
-                "name": "biller",
-                "type": ""
-              },
-              {
-                "name": "billerReference",
-                "type": ""
-              }
-            ],
-            "samples": [
-              "{billerReference}",
-              "{biller}",
-              "Renew my subscription",
-              "Subscribe for {biller}",
-              "Renew {biller} subscription",
-              "Pay my {biller}"
-            ]
-          }
-        ],
-        "types": []
-      }
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "banking",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "TransferIntent",
+          "slots": [
+            {
+              "name": "amount",
+              "type": ""
+            },
+            {
+              "name": "recipient",
+              "type": ""
+            }
+          ],
+          "samples": [
+            "Transfer money to {recipient}",
+            "Transfer {amount}",
+            "Send {amount}",
+            "{amount}",
+            "Send {amount} to {recipient}",
+            "Send money to {recipient}",
+            "Transfer {amount} to {recipient}"
+          ]
+        },
+        {
+          "name": "TopupIntent",
+          "slots": [
+            {
+              "name": "amount",
+              "type": ""
+            },
+            {
+              "name": "number",
+              "type": ""
+            }
+          ],
+          "samples": [
+            "Buy {amount} recharge card for {number}",
+            "Buy {amount} recharge card",
+            "Top up {number} with {amount}",
+            "Top up my phone with {amount}",
+            "Buy {amount} airtime",
+            "Buy airtime",
+            "Top up my phone",
+            "Recharge my phone"
+          ]
+        },
+        {
+          "name": "PaymentIntent",
+          "slots": [
+            {
+              "name": "biller",
+              "type": ""
+            },
+            {
+              "name": "billerReference",
+              "type": ""
+            }
+          ],
+          "samples": [
+            "{billerReference}",
+            "{biller}",
+            "Renew my subscription",
+            "Subscribe for {biller}",
+            "Renew {biller} subscription",
+            "Pay my {biller}"
+          ]
+        }
+      ],
+      "types": []
     }
   }
+}
