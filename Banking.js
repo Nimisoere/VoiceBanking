@@ -1,6 +1,6 @@
 const express = require("express");
 const alexa = require("alexa-app");
-
+var PORT = process.env.port || 8080;
 const app = express();
 
 var VoiceBankingApp = new alexa.app("voiceBanking");
@@ -13,6 +13,7 @@ VoiceBankingApp.express({
 
 VoiceBankingApp.launch(function(req, res) {
   res.say("Welcome to your Bank! What are we doing today?");
+  res.card("Welcome to your Bank! What are we doing today?");
 });
 
 VoiceBankingApp.intent(
@@ -40,8 +41,10 @@ VoiceBankingApp.intent(
     ]
   },
   function(req, res) {
-    res.say('Hi')
+    request.hasSession() &&
+    res.say('I will recharge your phone')
   }
 );
 
-module.exports = VoiceBankingApp;
+app.listen(PORT);
+console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/test");

@@ -11,6 +11,8 @@
   "dependencies": {
     "alexa-app": "^4.2.2",
     "ask-sdk": "^2.0.10",
-    "express": "^4.16.3"
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "ssml-builder": "^0.4.3"
   }
 }
